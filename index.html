@@ -143,14 +143,10 @@
 
 .hero-bg {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 320px; /* puedes ajustar tamaño */
-  height: 320px;
-  background: url('./marcaboreal.png') center/contain no-repeat;
-  filter: none;
-  opacity: 0.8;
-  transform: translate(-50%, -50%);
+  inset: 0; /* ocupa todo el hero */
+  background: url('./marcaboreal.png') center/cover no-repeat;
+  filter: blur(10px) brightness(1.1);
+  opacity: 0.5;
   z-index: -1;
 }
 
@@ -323,17 +319,6 @@
     <div class="aurora layer a1"></div>
     <div class="aurora layer a2"></div>
     <div class="aurora layer a3"></div>
-
-    <svg class="mountains" viewBox="0 0 1440 360" preserveAspectRatio="none" aria-hidden="true">
-      <defs>
-        <linearGradient id="mountainShade" x1="0" x2="0" y1="0" y2="1">
-          <stop offset="0%" stop-color="#0b0f1a" />
-          <stop offset="100%" stop-color="#06080f" />
-        </linearGradient>
-      </defs>
-      <path d="M0,300 L180,210 L320,280 L520,140 L720,260 L920,180 L1100,260 L1300,200 L1440,260 L1440,360 L0,360 Z" fill="url(#mountainShade)"></path>
-      <path d="M0,320 L150,260 L300,300 L520,200 L740,300 L980,240 L1200,300 L1440,280 L1440,360 L0,360 Z" fill="#0a0e18" opacity="0.9"></path>
-    </svg>
 
 <div class="hero-content">
   <div class="hero-bg"></div> 
